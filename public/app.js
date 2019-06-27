@@ -1,6 +1,8 @@
 const canvas = document.getElementById("ftMain");
 const ctx = canvas.getContext("2d");
 
+var socket = io();
+
 const onMouseDown = event => {
   //마우스클릭시 함수
   var x = rangeSet(event.offsetX);

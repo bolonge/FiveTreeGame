@@ -1,14 +1,15 @@
-var app = require("express")();
+var express = require("express");
+var app = express();
+var path = require("path");
 var server = require("http").createServer(app);
-
 var io = require("socket.io")(server);
+var port = process.env.PORT || 3000;
 
-io.path("/js");
+// Routing
+app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/", function(req, res) {
-  res.sendFile(__dirname + "/index.html");
-});
+var numUsers = 0;
 
-server.listen(3000, function() {
-  console.log("listening on *:3000");
+server.listen(port, () => {
+  console.log("Server listening at port %d", port);
 });
