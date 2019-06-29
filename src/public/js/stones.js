@@ -9,7 +9,7 @@ function blackDown(x, y) {
   blackStone.onload = function() {
     ctx.drawImage(blackStone, x - 22.5, y - 22.5, STONE_WIDTH, STONE_HEIGHT);
   };
-  blackStone.src = "./stones/black.png";
+  blackStone.src = "src/public/stones/black.png";
   blackId.push(createId(x, y));
   blackId.sort((a, b) => a - b);
 }
@@ -19,7 +19,7 @@ function whiteDown(x, y) {
   whiteStone.onload = function() {
     ctx.drawImage(whiteStone, x - 22.5, y - 22.5, STONE_WIDTH, STONE_HEIGHT);
   };
-  whiteStone.src = "./stones/white.png";
+  whiteStone.src = "src/public/stones/white.png";
   whiteId.push(createId(x, y));
   whiteId.sort((a, b) => a - b);
 }
