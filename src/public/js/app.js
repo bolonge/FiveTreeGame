@@ -31,5 +31,6 @@ const onMouseDown = event => {
 };
 
 if (canvas) {
-  canvas.addEventListener("pointerdown", onMouseDown);
+  canvas.addEventListener("mousedown", onMouseDown);
+  canvas.addEventListener("touchend", onMouseDown);
 }
