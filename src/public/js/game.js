@@ -31,7 +31,7 @@ function checkGame(id, color = "") {
     ) {
       setTimeout(() => {
         resultModal(color);
-      }, 300);
+      }, 100);
     }
   }
   for (let i = 1; i < 225; i++) {
@@ -44,7 +44,7 @@ function checkGame(id, color = "") {
     ) {
       setTimeout(() => {
         resultModal(color);
-      }, 300);
+      }, 100);
     }
   }
   for (let i = 1; i < 225; i++) {
@@ -57,7 +57,7 @@ function checkGame(id, color = "") {
     ) {
       setTimeout(() => {
         resultModal(color);
-      }, 300);
+      }, 100);
     }
   }
   for (let i = 1; i < 225; i++) {
@@ -70,7 +70,7 @@ function checkGame(id, color = "") {
     ) {
       setTimeout(() => {
         resultModal(color);
-      }, 300);
+      }, 100);
     }
   }
 }
